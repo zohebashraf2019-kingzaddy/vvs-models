@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VVS Models | Luxury Talent &amp; Staffing Agency — Reno · Tahoe · Sacramento · LA · Las Vegas</title>
+  <meta name="description" content="VVS Models is a premiere promotional modeling, event staffing and talent agency. Promotional models, brand ambassadors and go-go dancers for nightlife, casinos, trade shows and productions across California and Nevada." />
+  <meta name="theme-color" content="#0b0a09" />
+  <meta property="og:title" content="VVS Models | Luxury Talent & Staffing Agency" />
+  <meta property="og:description" content="Beautiful, professional, charismatic models to promote and elevate your brand, business or venue." />
+  <meta property="og:image" content="assets/img/team-black-event.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VVS Models",
+    "alternateName": "VVS Models | Luxury Talent & Staffing Agency",
+    "description": "Premiere promotional modeling, event staffing and talent agency.",
+    "url": "https://vvsmodels.com",
+    "logo": "https://vvsmodels.com/assets/img/vvs-logo.jpg",
+    "email": "info@vvsmodels.com",
+    "foundingDate": "2018",
+    "founder": { "@type": "Person", "name": "Nicole Tagge" },
+    "areaServed": ["Reno, NV","Las Vegas, NV","Lake Tahoe","Sacramento, CA","Roseville, CA","Auburn, CA","San Francisco, CA","San Jose, CA","Los Angeles, CA","San Diego, CA"],
+    "sameAs": ["https://www.instagram.com/vvs.models/"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Intro curtain -->
+  <div class="curtain" aria-hidden="true">
+    <img src="assets/img/vvs-logo.jpg" alt="" class="curtain__logo" />
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__brand" aria-label="VVS Models home">
+      <img src="assets/img/vvs-logo.jpg" alt="VVS Models logo" width="44" height="44" />
+      <span>VVS<em>Models</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">Agency</a>
+      <a href="#services">Services</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#join">Casting</a>
+      <a href="#contact" class="btn btn--gold btn--sm">Book Talent</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="drawer" aria-hidden="true">
+    <a href="#about">Agency</a>
+    <a href="#services">Services</a>
+    <a href="#showcase">Showcase</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#markets">Markets</a>
+    <a href="#join">Casting</a>
+    <a href="#contact">Contact</a>
+    <p class="drawer__mail"><a href="mailto:info@vvsmodels.com">info@vvsmodels.com</a></p>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <video class="hero__bg" src="assets/video/vvs-showcase.mp4" poster="assets/img/showcase-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+      <div class="hero__veil"></div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Premiere Promotional Modeling Agency · Est. 2018</p>
+          <h1 class="hero__title reveal">
+            <span>Luxury Talent</span>
+            <span><em>&amp;</em> Staffing</span>
+          </h1>
+          <p class="hero__lead reveal">Beautiful, professional, charismatic models who promote and elevate the value of your brand, business or venue — from casino floors and rooftop pools to the main stage.</p>
+          <div class="hero__ctas reveal">
+            <a href="#contact" class="btn btn--gold" data-tab="booking">Book Talent</a>
+            <a href="#join" class="btn btn--ghost">Become a VVS Model</a>
+          </div>
+          <ul class="hero__stats reveal" aria-label="Agency highlights">
+            <li><strong data-count="11.1" data-suffix="K">11.1K</strong><span>Instagram followers</span></li>
+            <li><strong data-count="10" data-suffix="+">10+</strong><span>Cities served</span></li>
+            <li><strong>2018</strong><span>Established</span></li>
+          </ul>
+        </div>
+
+        <figure class="reel reveal" aria-label="VVS Models showcase reel">
+          <div class="reel__frame">
+            <video id="reel" src="assets/video/vvs-showcase.mp4" poster="assets/img/showcase-poster.jpg" autoplay muted loop playsinline preload="auto"></video>
+            <div class="reel__hud">
+              <span class="reel__rec"><i></i> Showcase Reel</span>
+              <button class="reel__btn" id="reelToggle" aria-label="Pause showcase reel">
+                <svg viewBox="0 0 24 24" class="i-pause"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+                <svg viewBox="0 0 24 24" class="i-play"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="reel__progress"><span id="reelBar"></span></div>
+          </div>
+          <figcaption>Pool activations · Nightlife · Live productions</figcaption>
+        </figure>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to learn more"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-label="Markets served">
+      <div class="marquee__track">
+        <span>Reno</span><i>◆</i><span>Lake Tahoe</span><i>◆</i><span>Sacramento</span><i>◆</i><span>Los Angeles</span><i>◆</i><span>Las Vegas</span><i>◆</i><span>San Francisco</span><i>◆</i><span>San Diego</span><i>◆</i><span>San Jose</span><i>◆</i><span>Roseville</span><i>◆</i><span>Auburn</span><i>◆</i>
+        <span aria-hidden="true">Reno</span><i>◆</i><span aria-hidden="true">Lake Tahoe</span><i>◆</i><span aria-hidden="true">Sacramento</span><i>◆</i><span aria-hidden="true">Los Angeles</span><i>◆</i><span aria-hidden="true">Las Vegas</span><i>◆</i><span aria-hidden="true">San Francisco</span><i>◆</i><span aria-hidden="true">San Diego</span><i>◆</i><span aria-hidden="true">San Jose</span><i>◆</i><span aria-hidden="true">Roseville</span><i>◆</i><span aria-hidden="true">Auburn</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="about__media reveal">
+        <img src="assets/img/team-black-event.jpg" alt="The VVS Models team in matching black dresses at an event" loading="lazy" />
+        <div class="about__badge">
+          <img src="assets/img/vvs-logo.jpg" alt="" />
+        </div>
+      </div>
+      <div class="about__copy">
+        <p class="eyebrow reveal">The Agency</p>
+        <h2 class="reveal">Polished presence.<br /><em>Unforgettable</em> impressions.</h2>
+        <p class="reveal">Founded by entrepreneur <strong>Nicole Tagge</strong>, VVS Models is a premiere promotional modeling, event staffing and talent agency built on one idea: the right people in the room change everything about how your brand is remembered.</p>
+        <p class="reveal">Since 2018 our models, brand ambassadors and performers have worked nightlife venues, casinos, resort pools, car shows, trade shows and music &amp; video productions across the West Coast — including regular staffing at the Grand Sierra Resort and Casino in Reno.</p>
+        <ul class="about__points reveal">
+          <li><span>01</span>Hand-selected, professional talent</li>
+          <li><span>02</span>Confident, high-energy, on-brand</li>
+          <li><span>03</span>Reliable staffing from 1 to full teams</li>
+        </ul>
+        <div class="about__sign reveal">
+          <span class="script">Nicole Tagge</span>
+          <small>Founder, VVS Models</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+      <header class="section__head">
+        <p class="eyebrow reveal">What We Provide</p>
+        <h2 class="reveal">Talent for every <em>stage</em></h2>
+      </header>
+      <div class="services__grid">
+        <article class="card reveal">
+          <span class="card__num">01</span>
+          <h3>Promotional Models</h3>
+          <p>Engaging, camera-ready models who put your product in hands and your name in conversations — sampling, giveaways and activations.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">02</span>
+          <h3>Brand Ambassadors</h3>
+          <p>Knowledgeable, personable ambassadors who represent your brand at trade shows, expos, festivals and retail launches.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">03</span>
+          <h3>Go-Go Dancers &amp; Nightlife</h3>
+          <p>Choreographed, costumed performers and hosts that turn a night into an event for clubs, lounges and VIP experiences.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">04</span>
+          <h3>Casinos &amp; Resorts</h3>
+          <p>Elegant event staffing for casino floors, pool parties and resort celebrations — trusted at venues like the Grand Sierra Resort.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">05</span>
+          <h3>Music &amp; Video Productions</h3>
+          <p>On-screen talent for music videos, commercials, social content and branded productions.</p>
+        </article>
+        <article class="card card--feature reveal">
+          <span class="card__num">06</span>
+          <h3>VVS Girls Portfolio Program</h3>
+          <p>Beginner model packages with photo shoots, styling assistance, posing coaching and networking events for aspiring models and content creators.</p>
+          <a href="#contact" class="link-arrow" data-tab="apply">Start your portfolio <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SHOWCASE / FEATURED WORK -->
+    <section class="showcase section" id="showcase">
+      <header class="section__head">
+        <p class="eyebrow reveal">Featured Work</p>
+        <h2 class="reveal">Where VVS <em>shows up</em></h2>
+      </header>
+
+      <div class="feature">
+        <div class="feature__media reveal">
+          <img src="assets/img/mount-gay-activation.jpg" alt="VVS model at a Mount Gay Rum activation tent" loading="lazy" />
+          <img src="assets/img/mount-gay-duo.jpg" alt="Two VVS models presenting Mount Gay Rum" loading="lazy" class="feature__inset" />
+        </div>
+        <div class="feature__copy reveal">
+          <span class="tag">Brand Activation</span>
+          <h3>Mount Gay Rum × Street Heat</h3>
+          <p>Brand-uniformed models running the rum activation at Street Heat — Reno's hottest car show. Sampling, branded giveaways and photo moments with guests all day long.</p>
+        </div>
+      </div>
+
+      <div class="feature feature--rev">
+        <div class="feature__media reveal">
+          <img src="assets/img/lex-gogo-holiday.jpg" alt="VVS go-go dancers in coordinated holiday costumes at a nightclub" loading="lazy" />
+          <img src="assets/img/lex-gogo-neon.jpg" alt="VVS go-go dancers in coordinated neon costumes" loading="lazy" class="feature__inset" />
+        </div>
+        <div class="feature__copy reveal">
+          <span class="tag">Nightlife</span>
+          <h3>LEX Nightclub Residency</h3>
+          <p>Coordinated go-go teams, themed costuming and stage performances for nights like <em>Models &amp; Bottles</em> — produced so the room never drops its energy.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature__media reveal">
+          <img src="assets/img/poolside-swim-team.jpg" alt="VVS models in swimwear at a resort pool event" loading="lazy" />
+          <img src="assets/img/team-black-event.jpg" alt="VVS team at a corporate celebration" loading="lazy" class="feature__inset" />
+        </div>
+        <div class="feature__copy reveal">
+          <span class="tag">Resorts &amp; Events</span>
+          <h3>Pool Parties &amp; Private Celebrations</h3>
+          <p>From rooftop pool activations and swim showcases to black-tie corporate celebrations, we staff teams that match your dress code and your audience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery section" id="gallery">
+      <header class="section__head">
+        <p class="eyebrow reveal">Portfolio</p>
+        <h2 class="reveal">The <em>Gallery</em></h2>
+      </header>
+      <div class="filters reveal" role="tablist" aria-label="Filter gallery">
+        <button class="is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button data-filter="events" role="tab" aria-selected="false">Events</button>
+        <button data-filter="editorial" role="tab" aria-selected="false">Editorial</button>
+        <button data-filter="nightlife" role="tab" aria-selected="false">Nightlife</button>
+      </div>
+      <div class="grid" id="grid"><!-- built by script.js --></div>
+    </section>
+
+    <!-- DIVISIONS -->
+    <section class="divisions section">
+      <header class="section__head">
+        <p class="eyebrow reveal">The VVS Family</p>
+        <h2 class="reveal">Follow every <em>division</em></h2>
+      </header>
+      <div class="divisions__list">
+        <a class="div-card reveal" href="https://www.instagram.com/vvs.models/" target="_blank" rel="noopener"><span>@vvs.models</span><small>Main agency · 11.1K</small></a>
+        <a class="div-card reveal" href="https://www.instagram.com/vvs.promotions/" target="_blank" rel="noopener"><span>@vvs.promotions</span><small>Brand promotions</small></a>
+        <a class="div-card reveal" href="https://www.instagram.com/vvs.therow/" target="_blank" rel="noopener"><span>@vvs.therow</span><small>The Row</small></a>
+        <a class="div-card reveal" href="https://www.instagram.com/vvs.active/" target="_blank" rel="noopener"><span>@vvs.active</span><small>Active &amp; fitness</small></a>
+        <a class="div-card reveal" href="https://www.instagram.com/vvs.lexnightclub/" target="_blank" rel="noopener"><span>@vvs.lexnightclub</span><small>LEX Nightclub</small></a>
+      </div>
+    </section>
+
+    <!-- MARKETS -->
+    <section class="markets section" id="markets">
+      <div class="markets__copy">
+        <p class="eyebrow reveal">Service Areas</p>
+        <h2 class="reveal">West Coast<br /><em>coverage</em></h2>
+        <p class="reveal">Hiring and staffing in every major city in California and Nevada — book one market or coordinate a multi-city tour.</p>
+      </div>
+      <div class="markets__cols reveal">
+        <div>
+          <h4>Nevada</h4>
+          <ul><li>Reno</li><li>Las Vegas</li></ul>
+          <h4>Lake Tahoe</h4>
+          <ul><li>Tahoe City</li><li>South Lake Tahoe</li></ul>
+        </div>
+        <div>
+          <h4>Northern California</h4>
+          <ul><li>Sacramento</li><li>Roseville</li><li>Auburn</li><li>San Francisco</li><li>San Jose</li></ul>
+          <h4>Southern California</h4>
+          <ul><li>Los Angeles</li><li>San Diego</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN / CASTING -->
+    <section class="join section" id="join">
+      <div class="join__video reveal">
+        <video src="assets/video/casting-call-2026.mp4" poster="assets/img/casting-poster.jpg" autoplay muted loop playsinline preload="none" aria-label="VVS Models Spring 2026 casting call flyer"></video>
+      </div>
+      <div class="join__copy">
+        <p class="eyebrow reveal">Now Casting · 2026 Team</p>
+        <h2 class="reveal">Do you want to be a <em>VVS Model?</em></h2>
+        <p class="reveal">We're hiring female promotional models for our 2026 team in all major cities across California and Nevada. Send us your photos — we look forward to your submission.</p>
+        <h4 class="reveal">Requirements</h4>
+        <ul class="checks reveal">
+          <li>Female models at least 21+</li>
+          <li>Minimal tattoos, or tattoos that can be covered</li>
+          <li>Confident and comfortable taking photos at events</li>
+          <li>Reliable, high energy, driven</li>
+        </ul>
+        <div class="join__ctas reveal">
+          <a href="#contact" class="btn btn--gold" data-tab="apply">Apply Now</a>
+          <a href="https://www.instagram.com/vvs.models/" target="_blank" rel="noopener" class="btn btn--ghost">💌 DM to Apply</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="contact__intro">
+        <p class="eyebrow reveal">Let's Connect</p>
+        <h2 class="reveal">Book talent or<br /><em>join the roster</em></h2>
+        <p class="reveal">Tell us about your event, venue or brand — or introduce yourself as a model. Our team responds personally.</p>
+        <dl class="contact__info reveal">
+          <div><dt>Email</dt><dd><a href="mailto:info@vvsmodels.com">info@vvsmodels.com</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/vvs.models/" target="_blank" rel="noopener">@vvs.models</a></dd></div>
+          <div><dt>Headquarters</dt><dd>Reno, Nevada</dd></div>
+          <div><dt>Markets</dt><dd>California &amp; Nevada</dd></div>
+        </dl>
+      </div>
+
+      <div class="form-wrap reveal">
+        <div class="tabs" role="tablist" aria-label="Choose form">
+          <button role="tab" aria-selected="true" data-panel="booking" class="is-active">I'm Booking Talent</button>
+          <button role="tab" aria-selected="false" data-panel="apply">I'm a Model</button>
+          <span class="tabs__ink"></span>
+        </div>
+
+        <!-- Booking form -->
+        <form class="form is-active" id="booking" data-subject="New Talent Booking Inquiry — VVS Models website" novalidate>
+          <div class="row">
+            <label class="field"><input name="Name" required autocomplete="name" placeholder=" " /><span>Full name *</span></label>
+            <label class="field"><input name="Company / Venue" autocomplete="organization" placeholder=" " /><span>Company / venue</span></label>
+          </div>
+          <div class="row">
+            <label class="field"><input type="email" name="email" required autocomplete="email" placeholder=" " /><span>Email *</span></label>
+            <label class="field"><input type="tel" name="Phone" autocomplete="tel" placeholder=" " /><span>Phone</span></label>
+          </div>
+          <div class="row">
+            <label class="field field--select">
+              <select name="Event Type" required>
+                <option value="" disabled selected hidden></option>
+                <option>Brand activation / promotion</option>
+                <option>Nightlife / go-go dancers</option>
+                <option>Casino / resort event</option>
+                <option>Trade show / expo</option>
+                <option>Music video / production</option>
+                <option>Private or corporate event</option>
+                <option>Other</option>
+              </select><span>Event type *</span>
+            </label>
+            <label class="field field--select">
+              <select name="City" required>
+                <option value="" disabled selected hidden></option>
+                <option>Reno, NV</option><option>Las Vegas, NV</option><option>Lake Tahoe</option><option>Sacramento, CA</option><option>Roseville, CA</option><option>Auburn, CA</option><option>San Francisco, CA</option><option>San Jose, CA</option><option>Los Angeles, CA</option><option>San Diego, CA</option><option>Other / multiple</option>
+              </select><span>City *</span>
+            </label>
+          </div>
+          <div class="row">
+            <label class="field"><input type="date" name="Event Date" placeholder=" " /><span>Event date</span></label>
+            <label class="field"><input type="number" min="1" name="Models Needed" placeholder=" " /><span>Models needed</span></label>
+          </div>
+          <label class="field"><textarea name="Message" rows="4" required placeholder=" "></textarea><span>Tell us about your event *</span></label>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
+          <button class="btn btn--gold btn--block" type="submit">Send Inquiry</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+
+        <!-- Model application form -->
+        <form class="form" id="apply" data-subject="New Model Application — VVS Models website" novalidate>
+          <div class="row">
+            <label class="field"><input name="Name" required autocomplete="name" placeholder=" " /><span>Full name *</span></label>
+            <label class="field"><input name="Instagram" required placeholder=" " /><span>Instagram @ *</span></label>
+          </div>
+          <div class="row">
+            <label class="field"><input type="email" name="email" required autocomplete="email" placeholder=" " /><span>Email *</span></label>
+            <label class="field"><input type="tel" name="Phone" required autocomplete="tel" placeholder=" " /><span>Phone *</span></label>
+          </div>
+          <div class="row">
+            <label class="field field--select">
+              <select name="City" required>
+                <option value="" disabled selected hidden></option>
+                <option>Reno, NV</option><option>Las Vegas, NV</option><option>Lake Tahoe</option><option>Sacramento, CA</option><option>Roseville, CA</option><option>Auburn, CA</option><option>San Francisco, CA</option><option>San Jose, CA</option><option>Los Angeles, CA</option><option>San Diego, CA</option><option>Other</option>
+              </select><span>Your city *</span>
+            </label>
+            <label class="field field--select">
+              <select name="Interested In" required>
+                <option value="" disabled selected hidden></option>
+                <option>Promotional modeling</option>
+                <option>Brand ambassador</option>
+                <option>Go-go / nightlife</option>
+                <option>VVS Girls portfolio program</option>
+                <option>All of the above</option>
+              </select><span>Interested in *</span>
+            </label>
+          </div>
+          <div class="row">
+            <label class="field"><input name="Height" placeholder=" " /><span>Height</span></label>
+            <label class="field field--select">
+              <select name="Experience">
+                <option value="" disabled selected hidden></option>
+                <option>New — no experience yet</option>
+                <option>Some event experience</option>
+                <option>Experienced promo / brand model</option>
+                <option>Professional model / performer</option>
+              </select><span>Experience</span>
+            </label>
+          </div>
+          <label class="field"><input type="url" name="Photo Links" placeholder=" " /><span>Link to photos / portfolio (Drive, Dropbox, site)</span></label>
+          <label class="field"><textarea name="About Me" rows="3" placeholder=" "></textarea><span>Tell us about yourself</span></label>
+          <label class="check"><input type="checkbox" name="Confirms 21+" value="Yes" required /> <span>I confirm I am 21 years of age or older *</span></label>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
+          <button class="btn btn--gold btn--block" type="submit">Submit Application</button>
+          <p class="form__note">Prefer email? Send your photos to <a href="mailto:info@vvsmodels.com">info@vvsmodels.com</a></p>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#top" class="footer__logo"><img src="assets/img/vvs-logo.jpg" alt="VVS Models — Premiere Promotional Modeling Agency" loading="lazy" /></a>
+      <p class="footer__tag">Luxury Talent &amp; Staffing Agency<br /><span>Reno · Tahoe · Sacramento · Los Angeles · Las Vegas</span></p>
+      <div class="footer__links">
+        <a href="mailto:info@vvsmodels.com">info@vvsmodels.com</a>
+        <a href="https://www.instagram.com/vvs.models/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#join">Become a Model</a>
+        <a href="#contact">Book Talent</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> VVS Models. All rights reserved.</span>
+      <span>California | Nevada</span>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lb__close" aria-label="Close">×</button>
+    <button class="lb__nav lb__prev" aria-label="Previous image">&lt;</button>
+    <figure class="lb__stage">
+      <img id="lbImg" alt="" />
+      <figcaption><span id="lbCap"></span><span id="lbCount"></span></figcaption>
+    </figure>
+    <button class="lb__nav lb__next" aria-label="Next image">&gt;</button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
